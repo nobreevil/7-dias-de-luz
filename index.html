@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7 Dias de Luz | Plano de leitura bíblica por R$ 7</title>
+<meta name="description" content="Plano de leitura bíblica em PDF para dias difíceis: 7 leituras de dez minutos, com reflexão, oração e pergunta. R$ 7, entrega imediata.">
+<meta property="og:title" content="7 Dias de Luz">
+<meta property="og:description" content="Sete leituras curtas da Bíblia para quem está cansado, com medo ou sem saber o que fazer.">
+<meta property="og:image" content="capa.jpg">
+<link rel="icon" href="lampada.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0a0503;--ember:#1c0d06;--paper:#fbf6ee;--sand:#f1e6d6;--ink:#2a1a10;--cream:#fbeeda;--flame:#ffb14a;--clay:#a8491a;--gap:clamp(96px,14vw,180px);--edge:clamp(20px,4vw,48px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 clamp(17px,1.3vw,20px)/1.55 Gelasio,Georgia,"Palatino Linotype",serif;-webkit-text-size-adjust:100%}
+img{display:block;width:100%;height:auto}
+h1,h2,h3,p,ul,ol{margin:0;padding:0}
+h1,h2{font-weight:400;letter-spacing:-.025em;line-height:1.02}
+h2{font-size:clamp(38px,5.2vw,76px)}
+.wrap{max-width:1440px;margin:auto;padding-inline:var(--edge)}
+.btn{display:inline-block;background:var(--flame);color:var(--night);font-weight:600;font-size:clamp(18px,1.4vw,21px);padding:18px 30px;text-decoration:none;transition:transform .18s,background-color .18s}
+.btn:hover{background:#ffc877;transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--flame)}
+
+.hero{background:var(--night);color:var(--cream);overflow:hidden}
+.bar{display:flex;justify-content:space-between;align-items:center;padding-block:22px;gap:20px}
+.bar b{font-weight:600}
+.bar a{color:var(--flame)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(24px,4vw,64px);min-height:min(82vh,780px);padding-bottom:48px}
+h1{font-size:clamp(46px,5.7vw,86px)}
+.lead{font-size:clamp(20px,1.9vw,27px);line-height:1.38;margin:32px 0 32px;max-width:32em}
+.buy{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center}
+.buy span{font-size:clamp(16px,1.2vw,18px)}
+.hero-pic{animation:breathe 7s ease-in-out infinite alternate;transform-origin:62% 55%}
+@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.035)}}
+
+.feel{padding-block:var(--gap)}
+.feel-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px);align-items:start}
+.feel p.sub{margin-top:24px;max-width:28em}
+.choices{display:flex;flex-wrap:wrap;gap:10px;border:0;margin:0 0 28px;padding:0}
+.choices legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.choices input{position:absolute;opacity:0}
+.choices label{background:var(--sand);padding:13px 20px;cursor:pointer;transition:background-color .18s,color .18s,transform .18s}
+.choices label:hover{transform:translateY(-2px)}
+.choices input:checked+label{background:var(--night);color:var(--cream)}
+.choices input:focus-visible+label{outline:3px solid var(--clay);outline-offset:3px}
+.reading{background:var(--night);color:var(--cream);padding:clamp(28px,4vw,56px);min-height:330px}
+.reading h3{font-weight:400;font-size:clamp(28px,3.2vw,46px);line-height:1.08;letter-spacing:-.02em;margin-bottom:20px}
+.reading blockquote{margin:0;font-style:italic;font-size:clamp(20px,1.8vw,25px);line-height:1.4}
+.reading cite{display:block;font-style:normal;color:var(--flame);margin-top:14px}
+
+.inside{background:var(--sand);padding-block:var(--gap)}
+.inside-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,6vw,96px);align-items:center}
+.inside ul{list-style:none;margin-top:32px}
+.inside li{padding-block:14px}
+.inside li b{display:block;font-weight:600;font-size:1.12em}
+.pages{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,2vw,24px)}
+.pages img{background:var(--paper)}
+
+.days{padding-block:var(--gap)}
+.days ol{list-style:none;margin-top:48px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(32px,6vw,96px)}
+.days li{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding-block:18px}
+.days li b{font-weight:400;font-size:clamp(24px,2.4vw,34px);line-height:1.15;letter-spacing:-.015em}
+.days li span{white-space:nowrap;color:var(--clay)}
+
+.offer{background:var(--night);color:var(--cream);padding-block:var(--gap)}
+.offer-grid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(32px,6vw,96px);align-items:center}
+.price{font-size:clamp(80px,13vw,190px);line-height:1.1;letter-spacing:-.04em;color:var(--flame);margin-block:24px;position:relative;overflow:hidden}
+.offer ul{list-style:none;margin-bottom:32px}
+.offer li{padding-block:5px}
+
+.faq{padding-block:var(--gap)}
+.faq-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px)}
+details{background:var(--sand);margin-bottom:10px}
+summary{cursor:pointer;padding:18px 22px;font-weight:600}
+details p{padding:0 22px 20px}
+
+footer{background:var(--ember);color:var(--cream);padding-block:64px 40px}
+footer p{max-width:46em;margin-bottom:16px}
+footer a{color:var(--flame)}
+.name{font-size:clamp(34px,10vw,150px);line-height:1;letter-spacing:-.035em;margin-top:40px;white-space:nowrap}
+
+.rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.d2{animation-delay:.08s}.d3{animation-delay:.16s}.d4{animation-delay:.24s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+.js .up{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .up.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+@media (max-width:820px){
+  .hero-grid,.feel-grid,.inside-grid,.offer-grid,.faq-grid{grid-template-columns:1fr}
+  .hero-grid{min-height:0;gap:8px}
+  .hero-pic{order:-1;max-width:420px;margin:auto}
+  .days ol{grid-template-columns:1fr}
+  .buy .btn,.offer .btn{width:100%;text-align:center}
+  .bar a{display:none}
+}
+</style>
+</head>
+<body>
+<header class="hero dark">
+  <div class="wrap">
+    <nav class="bar" aria-label="Principal"><b>Lâmpada nas Trevas</b><a href="#dias">Os 7 dias</a></nav>
+    <div class="hero-grid">
+      <div>
+        <h1 class="rise">7 dias de luz para os dias escuros</h1>
+        <p class="lead rise d2">Um plano de leitura da Bíblia em PDF para quem está cansado, com medo ou sem saber o que fazer.</p>
+        <div class="buy rise d3">
+          <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por R$ 7</a>
+          <span>Pagamento pela Kiwify. Acesso logo após a confirmação.</span>
+        </div>
+      </div>
+      <img class="hero-pic" src="lampada.jpg" width="1080" height="1080" alt="Lâmpada de barro acesa, com uma chama grande na escuridão">
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="feel" aria-labelledby="t-feel">
+  <div class="wrap feel-grid">
+    <div>
+      <h2 id="t-feel">Como você está hoje?</h2>
+      <p class="sub">Escolha o que mais parece com o seu momento e veja a leitura do plano que fala disso.</p>
+    </div>
+    <div>
+      <fieldset class="choices" id="choices">
+        <legend>Escolha como você está hoje</legend>
+        <input type="radio" name="f" id="f5" value="5" checked><label for="f5">Com cansaço</label>
+        <input type="radio" name="f" id="f2" value="2"><label for="f2">Com medo</label>
+        <input type="radio" name="f" id="f6" value="6"><label for="f6">Com ansiedade</label>
+        <input type="radio" name="f" id="f3" value="3"><label for="f3">Com o coração partido</label>
+        <input type="radio" name="f" id="f4" value="4"><label for="f4">Sem forças</label>
+        <input type="radio" name="f" id="f1" value="1"><label for="f1">Sem saber o que fazer</label>
+      </fieldset>
+      <div class="reading" aria-live="polite">
+        <h3 id="r-t">Dia 5: O convite para os cansados</h3>
+        <blockquote id="r-v">Venham a mim, todos vocês que estão cansados e sobrecarregados, e eu lhes darei descanso.</blockquote>
+        <cite id="r-c">Mateus 11:28</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="inside" aria-labelledby="t-in">
+  <div class="wrap inside-grid">
+    <div class="pages">
+      <img src="capa.jpg" width="839" height="1191" loading="lazy" alt="Capa do PDF 7 Dias de Luz">
+      <img src="dia1.jpg" width="839" height="1191" loading="lazy" alt="Página do Dia 1 do plano, com versículo, reflexão, oração e linhas para escrever">
+    </div>
+    <div>
+      <h2 id="t-in">Dez minutos por dia</h2>
+      <ul>
+        <li><b>Uma passagem</b>Para abrir na sua Bíblia e ler devagar.</li>
+        <li><b>Uma reflexão curta</b>Sobre o que aquele texto diz a quem está sofrendo.</li>
+        <li><b>Uma oração</b>Simples, para você continuar com suas palavras.</li>
+        <li><b>Uma pergunta</b>Com linhas para responder por escrito.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="days" id="dias" aria-labelledby="t-days">
+  <div class="wrap">
+    <h2 id="t-days">Os 7 dias do plano</h2>
+    <ol>
+      <li><b>Luz para o próximo passo</b><span>Salmo 119:105</span></li>
+      <li><b>Você não atravessa sozinho</b><span>Salmo 23:4</span></li>
+      <li><b>Perto de quem está quebrado</b><span>Salmo 34:18</span></li>
+      <li><b>Quando as forças acabam</b><span>1 Reis 19</span></li>
+      <li><b>O convite para os cansados</b><span>Mateus 11:28</span></li>
+      <li><b>Da preocupação à oração</b><span>Filipenses 4:6-7</span></li>
+      <li><b>As trevas não venceram</b><span>João 1:5</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="offer dark" aria-labelledby="t-offer">
+  <div class="wrap offer-grid">
+    <img src="dia5.jpg" width="839" height="1191" loading="lazy" alt="Página do Dia 5 do plano, O convite para os cansados">
+    <div>
+      <h2 id="t-offer">Comece hoje</h2>
+      <p class="price">R$ 7</p>
+      <ul>
+        <li>PDF de 10 páginas, para ler no celular ou imprimir</li>
+        <li>7 leituras com reflexão, oração e pergunta</li>
+        <li>Pagamento único, sem assinatura</li>
+      </ul>
+      <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por R$ 7</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="t-faq">
+  <div class="wrap faq-grid">
+    <h2 id="t-faq">Antes de comprar</h2>
+    <div>
+      <details open><summary>Como recebo o plano?</summary><p>Depois da confirmação do pagamento, a Kiwify envia o acesso ao seu e-mail. O PDF fica na área de membros para baixar.</p></details>
+      <details><summary>Serve para minha igreja?</summary><p>O plano usa passagens presentes nas Bíblias católica e evangélica e tem linguagem cristã geral.</p></details>
+      <details><summary>Preciso ter uma Bíblia?</summary><p>É bom ter uma. Os versículos aparecem em paráfrase no PDF, e cada dia indica a passagem para você ler por inteiro.</p></details>
+      <details><summary>E se eu me arrepender?</summary><p>Compras pela internet têm direito de arrependimento em até 7 dias, pelo Código de Defesa do Consumidor. O pedido é feito pelo suporte da Kiwify.</p></details>
+      <details><summary>O plano resolve o que estou passando?</summary><p>Ele é um apoio para ler a Bíblia e orar. Não promete cura nem substitui acompanhamento médico, psicológico ou pastoral.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="dark">
+  <div class="wrap">
+    <p>Se a dor estiver pesada demais, não fique sozinho. No Brasil, o CVV atende de graça, 24 horas, pelo telefone 188.</p>
+    <p><a href="https://www.instagram.com/lampadanastrevas/">Instagram @lampadanastrevas</a></p>
+    <p class="name">Lâmpada nas Trevas</p>
+  </div>
+</footer>
+
+<script>
+const R={1:["Dia 1: Luz para o próximo passo","Tua palavra é uma lâmpada para os meus pés e uma luz no meu caminho.","Salmo 119:105"],
+2:["Dia 2: Você não atravessa sozinho","Mesmo andando pelo vale mais escuro, não temerei mal algum, porque tu estás comigo.","Salmo 23:4"],
+3:["Dia 3: Perto de quem está quebrado","O Senhor está perto dos que têm o coração quebrado e salva os de espírito abatido.","Salmo 34:18"],
+4:["Dia 4: Quando as forças acabam","Exausto, Elias deitou-se e adormeceu. Um anjo o tocou e disse: levante-se e coma.","1 Reis 19:5"],
+5:["Dia 5: O convite para os cansados","Venham a mim, todos vocês que estão cansados e sobrecarregados, e eu lhes darei descanso.","Mateus 11:28"],
+6:["Dia 6: Da preocupação à oração","Não andem ansiosos por nada. Apresentem seus pedidos a Deus com oração e gratidão, e a paz de Deus guardará o coração e a mente de vocês.","Filipenses 4:6-7"]};
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches&&'IntersectionObserver'in window){
+  document.documentElement.classList.add('js');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
+  document.querySelectorAll('main section').forEach(s=>s.querySelectorAll('h2,.sub,.reading,.pages img,li,.price,.btn,details,.offer img').forEach((el,i)=>{el.classList.add('up');el.style.setProperty('--d',Math.min(i,6)*.07+'s');io.observe(el)}));
+}
+document.getElementById('choices').addEventListener('change',e=>{const r=R[e.target.value];['r-t','r-v','r-c'].forEach((id,i)=>document.getElementById(id).textContent=r[i])});
+</script>
+</body>
+</html>
