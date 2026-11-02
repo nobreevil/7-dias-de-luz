@@ -113,6 +113,12 @@ footer a{color:var(--flame)}
 .method+.inside,.days+.feel,.feel+.bonus{padding-top:0}
 .offer [data-promo]{margin-bottom:28px}
 
+.intro{background:var(--night);color:var(--cream);padding-block:clamp(32px,5vw,64px) var(--gap)}
+.intro-box{max-width:1040px;margin:auto}
+.intro h2{margin-bottom:clamp(24px,3vw,40px)}
+.intro video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.intro .btn{margin-top:28px}
+
 .rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
 .d2{animation-delay:.08s}.d3{animation-delay:.16s}.d4{animation-delay:.24s}
 @keyframes rise{from{opacity:0;transform:translateY(24px)}}
@@ -153,6 +159,16 @@ footer a{color:var(--flame)}
 </header>
 
 <main>
+<section class="intro dark" aria-labelledby="t-intro">
+  <div class="wrap">
+    <div class="intro-box">
+      <h2 id="t-intro">Entenda o plano em 1 minuto</h2>
+      <video controls playsinline preload="none" poster="intro.jpg" aria-label="Vídeo de apresentação do plano 7 Dias de Luz: o que é, como funciona e para que serve"><source src="intro.mp4" type="video/mp4"></video>
+      <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por <span data-preco>R$ 7</span></a>
+    </div>
+  </div>
+</section>
+
 <section class="helps" aria-labelledby="t-helps">
   <div class="wrap">
     <h2 id="t-helps">Em que o 7 Dias de Luz ajuda</h2>
