@@ -230,6 +230,10 @@ if(!matchMedia('(prefers-reduced-motion:reduce)').matches&&'IntersectionObserver
   document.querySelectorAll('main section').forEach(s=>s.querySelectorAll('h2,.sub,.reading,.pages img,li,.price,.btn,details,.offer img').forEach((el,i)=>{el.classList.add('up');el.style.setProperty('--d',Math.min(i,6)*.07+'s');io.observe(el)}));
 }
 document.getElementById('choices').addEventListener('change',e=>{const r=R[e.target.value];['r-t','r-v','r-c'].forEach((id,i)=>document.getElementById(id).textContent=r[i])});
+// contagem total, sem cookies e sem dados da pessoa; ?teste=1 não conta
+const conta=k=>{if(!location.search.includes('teste=1'))fetch('https://abacus.jasoncameron.dev/hit/lampada-7-dias-de-luz/'+k,{keepalive:true,mode:'no-cors'}).catch(()=>{})};
+conta('visitas');
+document.querySelectorAll('a.btn').forEach(b=>b.addEventListener('click',()=>conta('cliques')));
 </script>
 </body>
 </html>
