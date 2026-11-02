@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>7 Dias de Luz | Plano de leitura bíblica por R$ 7</title>
-<meta name="description" content="Plano de leitura bíblica em PDF para dias difíceis: 7 leituras de dez minutos, com reflexão, oração e pergunta. R$ 7, entrega imediata.">
+<title>7 Dias de Luz | Crie o hábito de ler a Bíblia</title>
+<meta name="description" content="Plano em PDF para criar o hábito de ler a Bíblia em 7 dias, com 10 minutos por dia, reflexão, oração e pergunta.">
 <meta property="og:title" content="7 Dias de Luz">
-<meta property="og:description" content="Cansado, com medo ou sem rumo? 7 dias na Bíblia para encontrar direção. PDF por R$ 7.">
+<meta property="og:description" content="Volte a ler a Bíblia todos os dias: plano em PDF de 7 dias, com 10 minutos por dia.">
 <meta property="og:image" content="capa.jpg">
 <link rel="icon" href="lampada.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +86,33 @@ footer p{max-width:46em;margin-bottom:16px}
 footer a{color:var(--flame)}
 .name{font-size:clamp(34px,10vw,150px);line-height:1;letter-spacing:-.035em;margin-top:40px;white-space:nowrap}
 
+.sub{margin-top:24px;max-width:34em}
+.promo{margin-top:24px;color:var(--cream)}
+.timer{color:var(--flame);font-size:clamp(24px,2.4vw,34px);margin-top:4px}
+.helps,.method,.bonus{padding-block:var(--gap)}
+.benefits{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,44px);margin-top:56px}
+.benefits li b,.bonus-list li b{display:block;font-weight:600;font-size:clamp(23px,2vw,29px);line-height:1.18;margin-bottom:8px}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);margin-top:72px}
+.fit div{background:var(--sand);padding:clamp(24px,3.5vw,48px)}
+.fit h3{font-weight:400;font-size:clamp(28px,3vw,42px);line-height:1.1;margin-bottom:20px}
+.fit ul{padding-left:1.1em}
+.fit li{margin-bottom:12px}
+.trial{background:var(--night);color:var(--cream);padding-block:var(--gap)}
+.trial-grid{display:grid;grid-template-columns:7fr 4fr;gap:clamp(32px,6vw,96px);align-items:center}
+.trial ul{list-style:none;margin:36px 0}
+.trial li{padding-block:12px;font-size:clamp(21px,2vw,29px);line-height:1.3}
+.sample{margin:0}
+.sample video{display:block;width:100%;aspect-ratio:9/16;background:#000}
+.sample figcaption{margin-top:12px}
+.method{background:var(--sand)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px);margin-top:56px}
+.steps span{display:block;color:var(--clay);font-size:clamp(70px,8vw,120px);line-height:1}
+.steps h3{font-weight:400;font-size:clamp(30px,3vw,44px);margin:10px 0}
+.bonus-list{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px);margin-top:48px}
+.safe{margin-top:18px}
+.method+.inside,.days+.feel,.feel+.bonus{padding-top:0}
+.offer [data-promo]{margin-bottom:28px}
+
 .rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
 .d2{animation-delay:.08s}.d3{animation-delay:.16s}.d4{animation-delay:.24s}
 @keyframes rise{from{opacity:0;transform:translateY(24px)}}
@@ -93,7 +120,8 @@ footer a{color:var(--flame)}
 .js .up.on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 @media (max-width:820px){
-  .hero-grid,.feel-grid,.inside-grid,.offer-grid,.faq-grid{grid-template-columns:1fr}
+  .hero-grid,.feel-grid,.inside-grid,.offer-grid,.faq-grid,.trial-grid,.fit,.benefits,.steps,.bonus-list{grid-template-columns:1fr}
+  .sample{max-width:340px;margin:auto}
   .hero-grid{min-height:0;gap:8px}
   .hero-pic{order:-1;max-width:420px;margin:auto}
   .days ol{grid-template-columns:1fr}
@@ -105,14 +133,18 @@ footer a{color:var(--flame)}
 <body>
 <header class="hero dark">
   <div class="wrap">
-    <nav class="bar" aria-label="Principal"><b>Lâmpada nas Trevas</b><a href="#dias">Os 7 dias</a></nav>
+    <nav class="bar" aria-label="Principal"><b>Lâmpada nas Trevas</b><a href="#oferta">Ver a oferta</a></nav>
     <div class="hero-grid">
       <div>
-        <h1 class="rise">Cansado, com medo ou sem rumo?</h1>
-        <p class="lead rise d2">O 7 Dias de Luz é um plano bíblico em PDF para encontrar direção na Palavra, com dez minutos de leitura por dia.</p>
+        <h1 class="rise">Volte a ler a Bíblia todos os dias</h1>
+        <p class="lead rise d2">Um plano em PDF para criar o hábito em 7 dias, com 10 minutos por dia. Você abre e já sabe o que ler, o que refletir e como orar.</p>
         <div class="buy rise d3">
-          <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por R$ 7</a>
+          <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por <span data-preco>R$ 7</span></a>
           <span>Pagamento pela Kiwify. Acesso logo após a confirmação.</span>
+        </div>
+        <div class="promo rise d4" data-promo>
+          <p>Preço de lançamento: R$ 7 até 09/11. A partir de 10/11, R$ 39,99.</p>
+          <p class="timer" role="timer" aria-label="Tempo restante da promoção"><span data-timer>--</span></p>
         </div>
       </div>
       <img class="hero-pic" src="lampada.jpg" width="1080" height="1080" alt="Lâmpada de barro acesa, com uma chama grande na escuridão">
@@ -121,28 +153,66 @@ footer a{color:var(--flame)}
 </header>
 
 <main>
-<section class="feel" aria-labelledby="t-feel">
-  <div class="wrap feel-grid">
-    <div>
-      <h2 id="t-feel">Como você está hoje?</h2>
-      <p class="sub">Escolha o que mais parece com o seu momento e veja a leitura do plano que fala disso.</p>
-    </div>
-    <div>
-      <fieldset class="choices" id="choices">
-        <legend>Escolha como você está hoje</legend>
-        <input type="radio" name="f" id="f5" value="5" checked><label for="f5">Com cansaço</label>
-        <input type="radio" name="f" id="f2" value="2"><label for="f2">Com medo</label>
-        <input type="radio" name="f" id="f6" value="6"><label for="f6">Com ansiedade</label>
-        <input type="radio" name="f" id="f3" value="3"><label for="f3">Com o coração partido</label>
-        <input type="radio" name="f" id="f4" value="4"><label for="f4">Sem forças</label>
-        <input type="radio" name="f" id="f1" value="1"><label for="f1">Sem saber o que fazer</label>
-      </fieldset>
-      <div class="reading" aria-live="polite">
-        <h3 id="r-t">Dia 5: O convite para os cansados</h3>
-        <blockquote id="r-v">Venham a mim, todos vocês que estão cansados e sobrecarregados, e eu lhes darei descanso.</blockquote>
-        <cite id="r-c">Mateus 11:28</cite>
+<section class="helps" aria-labelledby="t-helps">
+  <div class="wrap">
+    <h2 id="t-helps">Em que o 7 Dias de Luz ajuda</h2>
+    <p class="sub">Ele tira da frente o que costuma fazer a leitura parar: não saber por onde começar e perder o ritmo.</p>
+    <ul class="benefits">
+      <li><b>Saber o que ler hoje</b>Cada dia já vem com a passagem certa. Você não perde tempo procurando.</li>
+      <li><b>Entender o texto</b>Uma reflexão curta explica a passagem em linguagem simples.</li>
+      <li><b>Orar com o que leu</b>Uma oração de poucas linhas ajuda você a continuar com as suas palavras.</li>
+      <li><b>Criar uma rotina</b>São 10 minutos por dia, de manhã, à noite ou no intervalo.</li>
+      <li><b>Recomeçar sem culpa</b>Perdeu um dia? Continue de onde parou.</li>
+    </ul>
+    <div class="fit">
+      <div>
+        <h3>Para quem é</h3>
+        <ul>
+          <li>Cristãos de qualquer igreja que querem começar, voltar ou manter a leitura.</li>
+          <li>Quem tem pouco tempo e precisa de um caminho simples.</li>
+          <li>Quem já começou a ler a Bíblia e parou.</li>
+          <li>Quem passa por um período difícil e quer um apoio na Palavra.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Para quem não é</h3>
+        <ul>
+          <li>Quem procura um estudo teológico aprofundado.</li>
+          <li>Quem espera um resultado garantido em 7 dias.</li>
+          <li>Quem precisa de ajuda médica ou psicológica: o plano é um apoio e não substitui esse cuidado, nem a sua igreja.</li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="trial dark" aria-labelledby="t-trial">
+  <div class="wrap trial-grid">
+    <div>
+      <h2 id="t-trial">Você já tentou antes</h2>
+      <p class="sub">E sabe o que aconteceu.</p>
+      <ul>
+        <li>Começou por Gênesis, chegou nas genealogias e parou.</li>
+        <li>Abriu a Bíblia sem saber o que ler, e fechou.</li>
+        <li>Perdeu um dia, depois dois, e desistiu.</li>
+      </ul>
+      <p>Isso não mostra falta de fé. Mostra que faltava um caminho pequeno, com começo, meio e fim.</p>
+    </div>
+    <figure class="sample">
+      <video controls playsinline preload="none" poster="amostra.jpg" aria-label="Short do canal Lâmpada nas Trevas sobre o filho pródigo"><source src="amostra.mp4" type="video/mp4"></video>
+      <figcaption>Um Short do canal, para você conhecer o tom do projeto.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="method" aria-labelledby="t-method">
+  <div class="wrap">
+    <h2 id="t-method">Três passos, dez minutos</h2>
+    <ol class="steps">
+      <li><span>1</span><h3>Abra</h3><p>Leia a passagem do dia, devagar, na sua Bíblia.</p></li>
+      <li><span>2</span><h3>Reflita</h3><p>Leia a explicação curta e faça a oração sugerida.</p></li>
+      <li><span>3</span><h3>Responda</h3><p>Escreva uma resposta para a pergunta do dia, mesmo que seja só uma frase.</p></li>
+    </ol>
   </div>
 </section>
 
@@ -153,10 +223,11 @@ footer a{color:var(--flame)}
       <img src="dia1.jpg" width="839" height="1191" loading="lazy" alt="Página do Dia 1 do plano, com versículo, reflexão, oração e linhas para escrever">
     </div>
     <div>
-      <h2 id="t-in">Dez minutos por dia</h2>
+      <h2 id="t-in">Veja por dentro</h2>
+      <p class="sub">As leituras tratam de temas da vida real: medo, cansaço, ansiedade e esperança.</p>
       <ul>
         <li><b>Uma passagem</b>Para abrir na sua Bíblia e ler devagar.</li>
-        <li><b>Uma reflexão curta</b>Sobre o que aquele texto diz a quem está sofrendo.</li>
+        <li><b>Uma reflexão curta</b>Sobre o que aquele texto diz para o dia a dia.</li>
         <li><b>Uma oração</b>Simples, para você continuar com suas palavras.</li>
         <li><b>Uma pergunta</b>Com linhas para responder por escrito.</li>
       </ul>
@@ -179,18 +250,65 @@ footer a{color:var(--flame)}
   </div>
 </section>
 
-<section class="offer dark" aria-labelledby="t-offer">
+<section class="feel" aria-labelledby="t-feel">
+  <div class="wrap feel-grid">
+    <div>
+      <h2 id="t-feel">Como você está hoje?</h2>
+      <p class="sub">Escolha uma opção e veja uma leitura real do plano.</p>
+    </div>
+    <div>
+      <fieldset class="choices" id="choices">
+        <legend>Escolha como você está hoje</legend>
+        <input type="radio" name="f" id="f5" value="5" checked><label for="f5">Com cansaço</label>
+        <input type="radio" name="f" id="f2" value="2"><label for="f2">Com medo</label>
+        <input type="radio" name="f" id="f6" value="6"><label for="f6">Com ansiedade</label>
+        <input type="radio" name="f" id="f3" value="3"><label for="f3">Com o coração partido</label>
+        <input type="radio" name="f" id="f4" value="4"><label for="f4">Sem forças</label>
+        <input type="radio" name="f" id="f1" value="1"><label for="f1">Sem saber o que fazer</label>
+      </fieldset>
+      <div class="reading" aria-live="polite">
+        <h3 id="r-t">Dia 5: O convite para os cansados</h3>
+        <blockquote id="r-v">Venham a mim, todos vocês que estão cansados e sobrecarregados, e eu lhes darei descanso.</blockquote>
+        <cite id="r-c">Mateus 11:28</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bonus" aria-labelledby="t-bonus">
+  <div class="wrap">
+    <h2 id="t-bonus">Bônus incluídos</h2>
+    <ul class="bonus-list">
+      <li><b>Checklist dos 7 dias</b>Para marcar cada leitura e ver o seu progresso.</li>
+      <li><b>Guia “O que ler depois”</b>Mais 4 semanas de leitura, um trecho por dia.</li>
+      <li><b>Modelo de diário</b>Uma página para registrar o que você leu e aprendeu.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="depoimentos" class="reviews" hidden aria-labelledby="t-reviews">
+  <div class="wrap"><h2 id="t-reviews">Quem já leu</h2></div>
+</section>
+
+<section class="offer dark" id="oferta" aria-labelledby="t-offer">
   <div class="wrap offer-grid">
     <img src="dia5.jpg" width="839" height="1191" loading="lazy" alt="Página do Dia 5 do plano, O convite para os cansados">
     <div>
-      <h2 id="t-offer">Comece hoje</h2>
-      <p class="price">R$ 7</p>
+      <h2 id="t-offer">Tudo o que você recebe</h2>
+      <p class="price" data-preco>R$ 7</p>
+      <div data-promo>
+        <p>Preço de lançamento até 09/11. A partir de 10/11, R$ 39,99.</p>
+        <p class="timer"><span data-timer>--</span></p>
+      </div>
       <ul>
-        <li>PDF de 10 páginas, para ler no celular ou imprimir</li>
+        <li>PDF do plano, com 11 páginas para ler no celular ou imprimir</li>
         <li>7 leituras com reflexão, oração e pergunta</li>
+        <li>Página “Como manter o hábito depois do dia 7”</li>
+        <li>Checklist, guia de 4 semanas e modelo de diário</li>
         <li>Pagamento único, sem assinatura</li>
       </ul>
-      <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por R$ 7</a>
+      <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por <span data-preco>R$ 7</span></a>
+      <p class="safe">Direito de arrependimento de 7 dias, pelo Código de Defesa do Consumidor.</p>
     </div>
   </div>
 </section>
@@ -199,7 +317,10 @@ footer a{color:var(--flame)}
   <div class="wrap faq-grid">
     <h2 id="t-faq">Antes de comprar</h2>
     <div>
-      <details open><summary>Como recebo o plano?</summary><p>Depois da confirmação do pagamento, a Kiwify envia o acesso ao seu e-mail. O PDF fica na área de membros para baixar.</p></details>
+      <details open><summary>Sou iniciante. Consigo acompanhar?</summary><p>Sim. Cada dia indica a passagem e explica o texto em linguagem simples. Você não precisa saber nada antes.</p></details>
+      <details><summary>Quanto tempo leva por dia?</summary><p>Cerca de 10 minutos. O plano completo leva 7 dias, e você pode seguir no seu ritmo.</p></details>
+      <details><summary>Funciona no celular?</summary><p>Sim. O PDF abre no celular, no computador ou pode ser impresso.</p></details>
+      <details><summary>Como recebo o plano?</summary><p>Depois da confirmação do pagamento, a Kiwify envia o acesso ao seu e-mail. Os arquivos ficam na área de membros para baixar.</p></details>
       <details><summary>Serve para minha igreja?</summary><p>O plano usa passagens presentes nas Bíblias católica e evangélica e tem linguagem cristã geral.</p></details>
       <details><summary>Preciso ter uma Bíblia?</summary><p>É bom ter uma. Os versículos aparecem em paráfrase no PDF, e cada dia indica a passagem para você ler por inteiro.</p></details>
       <details><summary>E se eu me arrepender?</summary><p>Compras pela internet têm direito de arrependimento em até 7 dias, pelo Código de Defesa do Consumidor. O pedido é feito pelo suporte da Kiwify.</p></details>
@@ -230,6 +351,14 @@ if(!matchMedia('(prefers-reduced-motion:reduce)').matches&&'IntersectionObserver
   document.querySelectorAll('main section').forEach(s=>s.querySelectorAll('h2,.sub,.reading,.pages img,li,.price,.btn,details,.offer img').forEach((el,i)=>{el.classList.add('up');el.style.setProperty('--d',Math.min(i,6)*.07+'s');io.observe(el)}));
 }
 document.getElementById('choices').addEventListener('change',e=>{const r=R[e.target.value];['r-t','r-v','r-c'].forEach((id,i)=>document.getElementById(id).textContent=r[i])});
+const fim=new Date('2026-11-09T23:59:59-03:00').getTime(),q=new URLSearchParams(location.search),depois='R$ 39,99';
+const agora=()=>q.get('agora')?new Date(q.get('agora')).getTime():Date.now();
+function promo(){const r=fim-agora();
+  if(r<=0){document.querySelectorAll('[data-promo]').forEach(e=>e.hidden=true);document.querySelectorAll('[data-preco]').forEach(e=>e.textContent=depois);return false}
+  const s=Math.floor(r/1e3),d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),z=n=>String(n).padStart(2,'0');
+  const txt=`Termina em ${d?d+(d>1?' dias ':' dia '):''}${z(h)}h ${z(m)}min ${z(s%60)}s`;
+  document.querySelectorAll('[data-timer]').forEach(e=>e.textContent=txt);return true}
+if(promo())setInterval(promo,1e3);
 // contagem total, sem cookies e sem dados da pessoa; ?teste=1 não conta
 const conta=k=>{if(!location.search.includes('teste=1'))fetch('https://abacus.jasoncameron.dev/hit/lampada-7-dias-de-luz/'+k,{keepalive:true,mode:'no-cors'}).catch(()=>{})};
 conta('visitas');
