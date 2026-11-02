@@ -112,6 +112,10 @@ footer a{color:var(--flame)}
 .safe{margin-top:18px}
 .method+.inside,.days+.feel,.feel+.bonus{padding-top:0}
 .offer [data-promo]{margin-bottom:28px}
+.offer li[data-promo]{margin-bottom:0;color:var(--flame)}
+.extra{background:var(--night);color:var(--cream);padding:clamp(28px,4vw,56px);margin-top:clamp(40px,5vw,64px)}
+.extra h3{font-weight:400;font-size:clamp(30px,3.2vw,46px);line-height:1.08;letter-spacing:-.02em;color:var(--flame);margin-bottom:14px}
+.extra .bonus-list{margin-top:32px}
 
 .intro{background:var(--night);color:var(--cream);padding-block:clamp(32px,5vw,64px) var(--gap)}
 .intro-box{max-width:1040px;margin:auto}
@@ -150,6 +154,7 @@ footer a{color:var(--flame)}
         </div>
         <div class="promo rise d4" data-promo>
           <p>Preço de lançamento: R$ 7 até 09/11. A partir de 10/11, R$ 39,99.</p>
+          <p>Comprando até 09/11, você também recebe 3 aulas em vídeo.</p>
           <p class="timer" role="timer" aria-label="Tempo restante da promoção"><span data-timer>--</span></p>
         </div>
       </div>
@@ -299,6 +304,15 @@ footer a{color:var(--flame)}
       <li><b>Guia “O que ler depois”</b>Mais 4 semanas de leitura, um trecho por dia.</li>
       <li><b>Modelo de diário</b>Uma página para registrar o que você leu e aprendeu.</li>
     </ul>
+    <div class="extra" data-promo>
+      <h3>Só até 09/11: 3 aulas em vídeo</h3>
+      <p>Comprando até o dia 09/11, você também recebe 3 aulas de cerca de 5 minutos cada, na área de membros.</p>
+      <ul class="bonus-list">
+        <li><b>Abri a Bíblia. E agora?</b>Como encontrar a passagem e fazer a primeira leitura.</li>
+        <li><b>Li, mas não entendi</b>Como observar o texto e o contexto antes de concluir.</li>
+        <li><b>Como levar a leitura para o meu dia?</b>Como transformar a leitura em oração e em uma atitude possível.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -321,6 +335,7 @@ footer a{color:var(--flame)}
         <li>7 leituras com reflexão, oração e pergunta</li>
         <li>Página “Como manter o hábito depois do dia 7”</li>
         <li>Checklist, guia de 4 semanas e modelo de diário</li>
+        <li data-promo>Só até 09/11: 3 aulas em vídeo</li>
         <li>Pagamento único, sem assinatura</li>
       </ul>
       <a class="btn" href="https://pay.kiwify.com.br/0BK2rmZ">Quero o plano por <span data-preco>R$ 7</span></a>
